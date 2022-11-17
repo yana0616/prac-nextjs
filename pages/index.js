@@ -14,7 +14,11 @@ export default function Home() {
     //   <p>アウトプット</p>
     // </React.Fragment>
 
-    <Hero />
+    <Hero
+      title='CUBE'
+      subTitle='アウトプットしていくサイト'
+      imageOn
+    />
 
   )
 }
