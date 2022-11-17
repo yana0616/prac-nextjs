@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 
-import Layout from 'components/layout'
 import Hero from 'components/hero'
 
 export default function Home() {
@@ -15,9 +14,7 @@ export default function Home() {
     //   <p>アウトプット</p>
     // </React.Fragment>
 
-    <Layout>
-      <Hero />
-    </Layout>
+    <Hero />
 
   )
 }
