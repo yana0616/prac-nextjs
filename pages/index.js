@@ -1,8 +1,5 @@
 import React from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-
+import Container from 'components/container'
 import Hero from 'components/hero'
 
 export default function Home() {
@@ -13,12 +10,13 @@ export default function Home() {
     //   <h1 style={{ color: 'orange' }}>{pageTitle}</h1>
     //   <p>アウトプット</p>
     // </React.Fragment>
-
-    <Hero
-      title='CUBE'
-      subTitle='アウトプットしていくサイト'
-      imageOn
-    />
+    <Container>
+      <Hero
+        title='CUBE'
+        subTitle='アウトプットしていくサイト'
+        imageOn
+      />
+    </Container>
 
   )
 }
