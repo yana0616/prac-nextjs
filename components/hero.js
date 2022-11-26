@@ -1,8 +1,10 @@
+import styles from 'styles/hero.module.sass'
+
 export default function Hero({ title, subTitle, imageOn = false }) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{subTitle}</p>
+    <div className={styles.text}>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.subtitle}>{subTitle}</p>
       {imageOn && <figure>【画像】</figure>}
     </div>
   )
