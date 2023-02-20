@@ -3,6 +3,8 @@ import Hero from 'components/hero'
 import Postbody from 'components/post-body'
 import Contact from 'components/contact'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
+import Image from 'next/image'
+import eyecatch from 'images/about.jpg'
 
 export default function About() {
   return (
@@ -11,6 +13,18 @@ export default function About() {
         title='About'
         subTitle='About development activities.'
       />
+
+      <figure>
+        {/* TODO: next.js13からlayout属性使えなくなるので、下記みたいな感じで書く */}
+        <Image
+          src={eyecatch}
+          alt=""
+          sizes="(min-width: 1152px) 1152px, 100vw"
+          style={{ width: '100%', height: 'auto' }}
+          priority
+          placeholder="blur"
+        ></Image>
+      </figure>
 
       <TwoColumn>
         <TwoColumnMain>
